@@ -35,68 +35,69 @@ body {
                          "with with with these these these"
                          "quest quest quest these these these"
                          "quest quest quest these these these";
-    .container div {
+    div {
         height:90%;
         width:90%;
         display: flex;
         justify-content: center;
         align-items: center;
-}
-#what {
-  background-color: red;
-  color: white;
-  grid-area: what;
- }
+        div {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 70px double green;
+          background-color: aqua;
+          animation-play-state: paused;
+          animation-iteration-count: infinite;
+          animation-name: move;
+          animation-duration: 8s;
+          animation-delay: 0s;
+          &div:hover {
+            #in-what, #in-is, #in-up, #in-with, #in-these, #in-quest {
+                animation-play-state: running;
+            }
+            
+          }
+           
+          
+        }
+        
+    }
+    #what {
+        background-color: red;
+        color: white;
+        grid-area: what;
+    }
  
- #is {
-   background-color: yellow;
-   color: black;
-   grid-area: is;
- }
+    #is {
+        background-color: yellow;
+        color: black;
+        grid-area: is;
+    }
  
- #up {
-   background-color: blue;
-   color: white;
-   grid-area: up;
- }
+    #up {
+        background-color: blue;
+        color: white;
+        grid-area: up;
+    }
  
- #with {
-   background-color: rgb(145, 204, 43);
-   color: rgb(29, 28, 27);
-   grid-area: with;
- }
+    #with {
+        background-color: rgb(145, 204, 43);
+        color: rgb(29, 28, 27);
+        grid-area: with;
+    }
  
- #these {
-   background-color: orange;
-   color: rgb(243, 239, 239);
-   grid-area: these;
- }
+    #these {
+        background-color: orange;
+        color: rgb(243, 239, 239);
+        grid-area: these;
+    }
  
- #quest {
-   background-color: black;
-   color: rgb(243, 239, 241);
-   grid-area: quest;
- }
- 
- div div:hover {
-  #in-what, #in-is, #in-up, #in-with, #in-these, #in-quest {
-      animation-play-state: running;
-  }
-  
-}
- 
-    div div div {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 70px double green;
-        background-color: aqua;
-        animation-play-state: paused;
-        animation-iteration-count: infinite;
-        animation-name: move;
-        animation-duration: 8s;
-        animation-delay: 0s;
-}      
+    #quest {
+        background-color: black;
+        color: rgb(243, 239, 241);
+        grid-area: quest;
+    }
 }
 
 }
